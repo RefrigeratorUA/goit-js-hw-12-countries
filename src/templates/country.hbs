@@ -1,0 +1,23 @@
+<div class="col-6">
+    <div class="card mb-2">
+        <div class="row no-gutters">
+            <div class="col-8">
+                <div class="card-body">
+                    <h1 class="card-title">{{ name }}</h1>
+                    <p class="card-text"><b>Capital:</b>&nbsp;{{ capital }}</p>
+                    <p class="card-text"><b>Population:</b>&nbsp;{{ population }}</p>
+                    <p class="card-text"><b>Languages:</b></p>
+                    <ul class="list-group">
+                        {{#each this.languages}}
+                        <li class="list-group-item">{{ name }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4" style="padding: 1.25rem;">
+                <img src={{ flag }} class="card-img"
+                    style="background-color:lightgrey; border: 2px solid #80bdff; padding: 1px;" alt="{{ name }} flag">
+            </div>
+        </div>
+    </div>
+</div>
