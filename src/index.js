@@ -1,9 +1,9 @@
-import './styles.scss';
-import api from './fetchCountries';
-import { showAlert, closeAlert } from './alerts';
-const debounce = require('lodash.debounce');
+import './css/styles.scss';
+import api from './js/fetchCountries';
+import { showAlert, closeAlert } from './js/alerts';
 import countriesTpl from './templates/countries.hbs';
 import countryTpl from './templates/country.hbs';
+const debounce = require('lodash.debounce');
 
 const refs = {
   searchCountryFieldRef: document.querySelector('#searchCountryField'),
